@@ -21,17 +21,21 @@ efficient_replay_buffer.py - Memory-efficient experience storage
 config.py - All hyperparameters
 
 How to use:
-bash# Setup
+```
 bash setup.sh
-
+```
 # Train for 10k episodes
+```
 python space_invaders.py train --episodes 10000
-
+```
 # Evaluate trained model
+```
 python space_invaders.py evaluate models/rainbow_best.pth
-
+```
 # Train basic DQN instead
+```
 python space_invaders.py train --basic --episodes 1000
+```
 The implementation is well-structured with memory-efficient replay buffer, comprehensive logging, checkpointing, and visualization of training results. It's licensed under GPL-3.0.Z
 
 Installation Steps:
@@ -58,31 +62,48 @@ Verify the installation
 
 4. Activate the virtual environment
 On Linux/Mac:
+```
 bashsource venv/bin/activate
+```
 On Windows:
+```
 bashvenv\Scripts\activate
-5. Start training!
+```
+6. Start training!
 bash# Quick test (10 episodes)
+```
 python space_invaders.py train --episodes 10
+```
 
 # Full training (10,000 episodes - will take hours/days)
+```
 python space_invaders.py train --episodes 10000
+```
 
 Manual Installation (if setup.sh doesn't work):
 bash# 1. Create virtual environment
+```
 python -m venv venv
-
+```
 # 2. Activate it
 # Linux/Mac:
+```
 source venv/bin/activate
+```
 # Windows:
+```
 venv\Scripts\activate
+```
 
 # 3. Upgrade pip
+```
 pip install --upgrade pip
+```
 
 # 4. Install dependencies
+```
 pip install -r requirements.txt
+```
 
 Notes:
 
